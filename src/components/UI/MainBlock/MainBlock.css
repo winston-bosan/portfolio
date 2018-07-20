@@ -1,0 +1,17 @@
+.maxWidth {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    max-width: 1350px;
+}
+
+.section {
+    text-align: center;
+    background-color: #fafafa;
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.section-gutters {
+    margin-top: 50px;
+}

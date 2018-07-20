@@ -1,0 +1,25 @@
+.wavy {
+  background-image: url(https://usequarry.com/wavy-test-white.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  margin-top: -7.95rem;
+  min-height: 8rem;
+  height: 8rem;
+  box-sizing: border-box;
+  width: 100%;
+  @media screen and (max-width: 900px) {
+    margin-top: -5.95rem;
+    height: 6rem;
+  }
+}
+
+.rotate{
+    transform: rotate(180deg);
+    margin-top: 0rem;
+    margin-bottom: -7.95rem;
+    @media screen and (max-width: 900px) {
+        margin-bottom: -5.95rem;
+        height: 6rem;
+    }
+}

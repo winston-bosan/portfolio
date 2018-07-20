@@ -1,0 +1,40 @@
+.heroSegment {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @media screen and (max-width: 900px) {
+    height: 90vh;
+    min-height: 400px;
+  }
+}
+
+.backgroundAnimation {
+  position: absolute;
+  z-index: -1;
+  @media screen and (max-width: 900px) {
+    height: 90vh;
+    min-height: 400px;
+  }
+}
+
+.fixedElementFix {
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  backface-visibility: hidden;
+  perspective: 1000;
+}
+
+.colorHighlight:after {
+  background-color: #7fd4d3;
+  bottom: 0;
+  content: " ";
+  display: block;
+  height: 40%;
+  left: 10%;
+  opacity: 1;
+  position: absolute;
+  width: calc(100% + 20px);
+  z-index: -1;
+}
