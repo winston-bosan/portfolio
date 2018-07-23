@@ -16,14 +16,14 @@ class AnimationBackgroundB extends Component {
 
   constructor(props) {
     super(props);
-    this.canvasRef = React.createRef();
+    this.secondaryCanvasRef = React.createRef();
   }
 
   componentDidMount() {
-    canvas = this.canvasRef.current;
+    canvas = this.secondaryCanvasRef.current;
     this.setup();
     this.color();
-    context = this.canvasRef.current.getContext("2d");
+    context = this.secondaryCanvasRef.current.getContext("2d");
     this.update();
   }
 
@@ -110,7 +110,7 @@ class AnimationBackgroundB extends Component {
   render() {
     return (
       <canvas
-        ref={this.canvasRef}
+        ref={this.secondaryCanvasRef}
         className="backgroundAnimation"
         style={this.props.short ? { height: "400px" } : {}}
       />

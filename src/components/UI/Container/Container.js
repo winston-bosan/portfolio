@@ -17,9 +17,9 @@ const Container = props => {
                 paddingLeft:
                     props.containerWidth > 700
                         ? props.sidePadding
-                        : '5px',
+                        : '20px',
                 paddingRight:
-                    props.containerWidth > 700 ? props.sidePadding : '5px',
+                    props.containerWidth > 700 ? props.sidePadding : '20px',
                 paddingTop: props.verticalPadding,
                 ...props.style
             }}

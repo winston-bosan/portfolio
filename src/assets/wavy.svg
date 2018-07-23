@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 121" preserveAspectRatio="none">
+    <defs>
+        <style>.a{fill:#fff;}</style>
+    </defs>
+    <title>wavy-test-white</title>
+    <path class="a" d="M1440,52.68c-8.9-11.68-21.07-21.3-37.44-27.68-105.12-41-224.64,41-279.36,47-56.9,6.24-145.44-46-252-46S629.28,87,495.36,87,296.64,6,187.2,6,0,73,0,73v54H1440Z" transform="translate(0 -6)"/>
+    <path class="a" d="M1171.84,42.88c1.82,2.76-4.62,7.52-14.38,10.62s-19.15,3.38-21,.62,4.62-7.52,14.38-10.62S1170,40.12,1171.84,42.88Z" transform="translate(0 -6)"/>
+    <ellipse class="a" cx="1121.76" cy="54" rx="5.76" ry="4"/>
+</svg>

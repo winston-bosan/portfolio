@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "grommet": "^2.0.0-beta.4",
+    "grommet-css": "^1.6.0",
     "grommet-icons": "^1.1.0",
+    "grommet-old": "npm:grommet",
     "react": "^16.4.1",
     "react-app-rewire-scss": "^1.0.2",
     "react-app-rewired": "^1.5.2",
@@ -12,7 +14,7 @@
     "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
-    "react-scroll-to-component": "^1.0.2",
+    "react-scroll": "^1.7.10",
     "styled-components": "^3.3.3"
   },
   "scripts": {

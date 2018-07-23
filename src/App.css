@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,400,400i,700,700i");
 
-
 body {
   margin: 0;
   padding: 0;
   font-family: "IBM Plex Sans", sans-serif !important;
-  width: 100%;  
+  width: 100%;
   overflow-y: scroll;
   /* filter: hue-rotate(180deg); */
 }
@@ -21,7 +20,6 @@ body {
   }
 }
 
-
 canvas {
   margin: auto;
   width: 100%;
@@ -32,8 +30,73 @@ canvas {
   background-color: white;
 }
 
-
-.overrideMaxWidth{
+.overrideMaxWidth {
   max-width: none !important;
   width: 100%;
+}
+
+.underline {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.underline:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -5px;
+  background: #000;
+  height: 4px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+.underlineColored {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.underlineColored:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -5px;
+  background: #aaffff;
+  height: 4px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.underlineColored:hover:after,
+.underlineColored:focus:after,
+.underlineColored:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+.availableColor {
+  color: #2ecc71;
+  font-size: 18px !important;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.grommetux-world-map__flag{
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }

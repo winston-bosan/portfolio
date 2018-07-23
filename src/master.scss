@@ -29,6 +29,7 @@
 .colorHighlight:after {
   background-color: #7fd4d3;
   bottom: 0;
+  overflow: hidden;
   content: " ";
   display: block;
   height: 40%;
@@ -36,5 +37,6 @@
   opacity: 1;
   position: absolute;
   width: calc(100% + 20px);
+  max-width: 70vw;
   z-index: -1;
 }
