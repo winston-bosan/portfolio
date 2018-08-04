@@ -33,7 +33,7 @@ class TheWork extends Component {
               </Col>
             </Row>
             <Row style={{ marginBottom: 40 }}>
-              <Col sm={12} md={4} style={{ paddingTop: "12px" }}>
+              <Col sm={12} md={5} style={{ paddingTop: "12px" }}>
                 <Heading
                   level={2}
                   color="#111"
@@ -46,7 +46,7 @@ class TheWork extends Component {
                   Meighbourhood ⇒
                 </Heading>
               </Col>
-              <Col sm={12} md={6} style={{ paddingTop: "12px" }}>
+              <Col sm={12} md={5} style={{ paddingTop: "12px" }}>
                 <Heading level={2} color="#111" margin="small">
                   About:
                 </Heading>
@@ -60,10 +60,10 @@ class TheWork extends Component {
               </Col>
             </Row>
             <Row>
-              <Col sm={12} md={4}>
+              <Col sm={12} md={5}>
                 <Heading
                   className="underline"
-                  style={{cursor: 'not-allowed'}}
+                  style={{ cursor: "not-allowed" }}
                   level={2}
                   color="#111"
                   margin="small"
@@ -71,7 +71,7 @@ class TheWork extends Component {
                   True North ⇒
                 </Heading>
               </Col>
-              <Col sm={12} md={6}>
+              <Col sm={12} md={5}>
                 <Heading level={2} color="#111" margin="small">
                   About:
                 </Heading>
@@ -100,29 +100,30 @@ class TheWork extends Component {
                   className="colorHighlight"
                   size="large"
                   color="black"
-                  margin="large"
+                  margin="xlarge"
                   style={{
                     width: "auto",
                     display: "inline-block",
-                    position: "relative"
+                    position: "relative",
+                    marginBottom: 100
                   }}
                 >
                   The Experience
                 </Heading>
               </Col>
             </Row>
-            <Row style={{ marginBottom: 20 }}>
+            <Row style={{ marginBottom: 80 }}>
               <Col sm={12}>
                 <WorldMap
-                  colorIndex="grey-4"
+                  colorIndex="grey-2"
                   series={[
                     {
-                      place: [38.667966663699666, 115.29032258064518],
+                      place: [41.585907860802784, 103.83870967741933],
                       label: "Beijing",
-                      colorIndex: "graph-4",
+                      colorIndex: "graph-3",
                       id: "Beijing",
                       flag: !showMobileExperience && (
-                        <Box pad="small" colorIndex="graph-4">
+                        <Box pad="small" colorIndex="graph-3">
                           <Heading level="3" margin="none">
                             Tencent, 2015 Summer
                           </Heading>
@@ -141,30 +142,18 @@ class TheWork extends Component {
                             size="small"
                             style={{ maxWidth: 250 }}
                           >
-                            > I worked on a seasonable project with Nielsen to
+                            > I worked on a seasonal project with Nielsen to
                             bringing TV ad rating analysis techniques to mobile
                             advertisement.
                           </Text>
                         </Box>
                       )
                     },
-                    // {
-                    //   place: [41.585907860802784, -75.56989247311827],
-                    //   label: "Los Angeles",
-                    //   colorIndex: "accent-2",
-                    //   id: "los-angeles",
-                    //   flag: (
-                    //     <Box pad="small" colorIndex="accent-2">
-                    //       {" "}
-                    //       Los Angeles
-                    //     </Box>
-                    //   )
-                    // },
                     {
                       place: [44.37770459322163, -79.38709677419355],
-                      label: "Tornto",
+                      label: "Toronto",
                       colorIndex: "graph-1",
-                      id: "Tornto",
+                      id: "Toronto",
                       flag: !showMobileExperience && (
                         <Box
                           pad="small"
@@ -174,28 +163,27 @@ class TheWork extends Component {
                           <Heading level="3" margin="none">
                             Meighbourhood,<br /> 2017~2018
                           </Heading>
-                          {!showMobileExperience && [
-                            <Text
-                              style={{
-                                fontStyle: "italic",
-                                fontWeight: "bold"
-                              }}
-                              margin="none"
-                              size="small"
-                            >
-                              Founder and Developer
-                            </Text>,
-                            <Text
-                              margin="none"
-                              size="small"
-                              style={{ maxWidth: "300px" }}
-                            >
-                              > I built a data visualization platform for
-                              Toronto Real Estate. A place where people can see
-                              housing price, crime statistics and trends with
-                              the aid of Technology.
-                            </Text>
-                          ]}
+                          <Text
+                            style={{
+                              fontStyle: "italic",
+                              fontWeight: "bold"
+                            }}
+                            margin="none"
+                            size="small"
+                          >
+                            Founder and Developer
+                          </Text>
+                          <Text
+                            margin="none"
+                            size="small"
+                            style={{ maxWidth: "300px" }}
+                          >
+                            > I built a data visualization platform for Toronto
+                            Real Estate. A place where people can see housing
+                            price, crime statistics and trends with the aid of
+                            Technology.
+                          </Text>
+
                         </Box>
                       )
                     }
@@ -205,7 +193,11 @@ class TheWork extends Component {
             </Row>
             {showMobileExperience && (
               <Row>
-                <Box pad="medium" colorIndex="graph-4" style={{marginBottom: '10px'}}>
+                <Box
+                  pad="medium"
+                  colorIndex="graph-3"
+                  style={{ marginBottom: "10px" }}
+                >
                   <Heading level="3" margin="none">
                     Tencent, 2015 Summer
                   </Heading>
@@ -291,7 +283,9 @@ class TheWork extends Component {
                 />
               </Col>
               <Col sm={12} md={7}>
-                <Heading color="black" style={{marginTop: '10px'}}>Hi! I am Simon.</Heading>
+                <Heading color="black" style={{ marginTop: "10px" }}>
+                  Hi! I am Simon.
+                </Heading>
                 <Paragraph style={{ color: "black" }}>
                   <span style={{ fontWeight: "800" }}>↳</span> Based in Toronto,
                   Canada
