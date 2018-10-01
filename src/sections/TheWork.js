@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Heading, Paragraph, Text } from "grommet";
 import Container from "../components/UI/Container/Container";
 import { Grid, Row, Col } from "react-bootstrap";
-import { Technology, Home } from "grommet-icons";
+import { Technology, Home, Clipboard } from "grommet-icons";
 import WorldMap from "grommet-old/components/WorldMap";
 import Box from "grommet-old/components/Box";
 
@@ -11,6 +11,7 @@ class TheWork extends Component {
 
   render() {
     let showMobileExperience = window.innerWidth < 1000;
+    console.log(showMobileExperience);
     return (
       <Container veryStrict>
         <div>
@@ -32,6 +33,35 @@ class TheWork extends Component {
                 </Heading>
               </Col>
             </Row>
+            <Row style={{ marginBottom: 40 }}>
+              <Col sm={12} md={5} style={{ paddingTop: "12px" }}>
+                <Heading
+                  level={2}
+                  color="#111"
+                  margin="small"
+                  className="underline"
+                  onClick={() => {
+                    window.open("https://hardcore-morse-05a8bd.netlify.com");
+                  }}
+                >
+                  Ollert ⇒
+                </Heading>
+              </Col>
+              <Col sm={12} md={5} style={{ paddingTop: "12px" }}>
+                <Heading level={2} color="#111" margin="small">
+                  About:
+                </Heading>
+                <Paragraph color="#111" margin="small">
+                  Ollert is a functional clone of Trello and a practice in
+                  fullstack development designed to learn new technologies while
+                  practicing old ones.
+                </Paragraph>
+              </Col>
+              <Col sm={12} md={2}>
+                <Clipboard size="xlarge" style={{ stroke: "#7fd4d3" }} />
+              </Col>
+            </Row>
+
             <Row style={{ marginBottom: 40 }}>
               <Col sm={12} md={5} style={{ paddingTop: "12px" }}>
                 <Heading
@@ -161,7 +191,8 @@ class TheWork extends Component {
                           style={{ color: "white" }}
                         >
                           <Heading level="3" margin="none">
-                            Meighbourhood,<br /> 2017~2018
+                            Meighbourhood,
+                            <br /> 2017~2018
                           </Heading>
                           <Text
                             style={{
@@ -183,7 +214,6 @@ class TheWork extends Component {
                             price, crime statistics and trends with the aid of
                             Technology.
                           </Text>
-
                         </Box>
                       )
                     }
